@@ -319,12 +319,48 @@ const AdminDashboard = ({ user, role, initialTab }) => {
           <div className="bg-white p-6 rounded-xl shadow-sm border h-fit">
             <h3 className="font-bold text-lg mb-4 flex items-center gap-2"><Calendar className="text-teal-600"/> Tambah Acara Manual</h3>
             <form onSubmit={handleAddEvent} className="space-y-4">
-              <input required placeholder="Nama Acara" className="w-full border p-2 rounded" value={newEvent.title} onChange={e => setNewEvent({...newEvent, title: e.target.value})} />
+              <input 
+                required 
+                placeholder="Nama Acara" 
+                className="w-full border p-2 rounded" 
+                value={newEvent.title} 
+                onChange={e => setNewEvent({...newEvent, title: e.target.value})} 
+                onInvalid={e => e.target.setCustomValidity('Mohon isi nama acara.')}
+                onInput={e => e.target.setCustomValidity('')}
+              />
+              
               <div className="grid grid-cols-2 gap-4">
-                <input required type="date" className="w-full border p-2 rounded" value={newEvent.date} onChange={e => setNewEvent({...newEvent, date: e.target.value})} />
-                <input required placeholder="Lokasi" className="w-full border p-2 rounded" value={newEvent.location} onChange={e => setNewEvent({...newEvent, location: e.target.value})} />
+                <input 
+                    required 
+                    type="date" 
+                    className="w-full border p-2 rounded" 
+                    value={newEvent.date} 
+                    onChange={e => setNewEvent({...newEvent, date: e.target.value})}
+                    onInvalid={e => e.target.setCustomValidity('Mohon pilih tanggal.')}
+                    onInput={e => e.target.setCustomValidity('')}
+                />
+                <input 
+                    required 
+                    placeholder="Lokasi" 
+                    className="w-full border p-2 rounded" 
+                    value={newEvent.location} 
+                    onChange={e => setNewEvent({...newEvent, location: e.target.value})}
+                    onInvalid={e => e.target.setCustomValidity('Mohon isi lokasi acara.')}
+                    onInput={e => e.target.setCustomValidity('')}
+                />
               </div>
-              <textarea required placeholder="Deskripsi" className="w-full border p-2 rounded" rows="3" value={newEvent.desc} onChange={e => setNewEvent({...newEvent, desc: e.target.value})} />
+              
+              <textarea 
+                required 
+                placeholder="Deskripsi" 
+                className="w-full border p-2 rounded" 
+                rows="3" 
+                value={newEvent.desc} 
+                onChange={e => setNewEvent({...newEvent, desc: e.target.value})}
+                onInvalid={e => e.target.setCustomValidity('Mohon isi deskripsi acara.')}
+                onInput={e => e.target.setCustomValidity('')}
+              />
+              
               <button className="w-full bg-teal-600 text-white py-2.5 rounded-lg font-bold">Simpan</button>
             </form>
           </div>
