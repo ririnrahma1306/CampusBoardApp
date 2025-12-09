@@ -115,13 +115,13 @@ Jika Anda ingin mencoba fitur tanpa mendaftar, gunakan akun berikut:
 ### Admin
 ```
 Email   : campusboard1@gmail.com
-Password: adminkita
+Password: Admin123
 ```
 
 ### User
 ```
 Enail   : Mahasiswa58@gmail.com
-Password: Mhs123
+Password: Mhs12345
 ```
 
 ---
