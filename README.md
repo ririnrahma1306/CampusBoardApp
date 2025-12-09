@@ -120,7 +120,7 @@ Password: Admin123
 
 ### User
 ```
-Enail   : Mahasiswa58@gmail.com
+Email   : Mahasiswa58@gmail.com
 Password: Mhs12345
 ```
 
