@@ -26,6 +26,8 @@
   </tr>
 </table>
 
+*Dosen Pengampu* : Dila Nurlaila, M.Kom
+
 ---
 
 **CampusBoard** adalah aplikasi berbasis web yang berfungsi sebagai papan informasi digital untuk lingkungan kampus UIN Sultan Thaha Saifuddin Jambi. Aplikasi ini memusatkan penyebaran pengumuman akademik, acara kemahasiswaan, dan kalender kegiatan dalam satu platform yang mudah diakses.
